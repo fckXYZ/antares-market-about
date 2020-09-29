@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Helvetica';
+	font-weight: 700;
+	src: url('./fonts/aghelveticacyr_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/aghelveticacyr_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/aghelveticacyr_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/aghelveticacyr_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/aghelveticacyr_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/aghelveticacyr_bold.svg#aghelveticacyr_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Helvetica';
+	font-weight: 400;
+	src: url('./fonts/ag_helvetica.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/ag_helvetica.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+	url('./fonts/ag_helvetica.woff2') format('woff2'), /* Super Modern Browsers */
+	url('./fonts/ag_helvetica.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+	url('./fonts/ag_helvetica.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('./fonts/ag_helvetica.svg#ag_helvetica') format('svg'); /* Chrome < 4, Legacy iOS */
+}
