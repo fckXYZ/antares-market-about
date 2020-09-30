@@ -1,27 +1,28 @@
 import React from "react";
 import './index.css';
+import {Tr} from "../Tr";
 
-export const Footer = () => {
+export const Footer = (props) => {
 	return (
 		<section className='footer'>
 			<div className='footer__links'>
 				<div className='footer__docs footer__docs-one'>
 					<a className='footer__link' href='#'>
-						Техническая поддержка
+						<Tr lang={props.lang} string="Техническая поддержка"/>
 					</a>
 					<a className='footer__link' href='#'>
-						Безопасная сделка
+						<Tr lang={props.lang} string="Безопасная сделка"/>
 					</a>
 					<a className='footer__link' href='#'>
-						Условия использования
+						<Tr lang={props.lang} string="Условия использования"/>
 					</a>
 				</div>
 				<div className='footer__docs footer__docs-two'>
 					<a className='footer__link' href='#'>
-						Оферта о заключении договора оказания услуг
+						<Tr lang={props.lang} string="Оферта о заключении договора оказания услуг"/>
 					</a>
 					<a className='footer__link' href='#'>
-						Политика о данных пользователей ANTARES MARKET
+						<Tr lang={props.lang} string="Политика о данных пользователей ANTARES MARKET"/>
 					</a>
 				</div>
 			</div>

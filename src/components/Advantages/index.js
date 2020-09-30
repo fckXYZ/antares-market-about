@@ -5,27 +5,31 @@ import bitcoin from "../../assets/images/bitcoin-icon.svg";
 import verified from "../../assets/images/verified-icon.svg";
 import star from "../../assets/images/star-icon.svg";
 import chat from "../../assets/images/chat-icon.svg";
+import {Tr} from "../Tr";
 
-export const Advantages = () => {
+export const Advantages = (props) => {
 	return (
 		<section className='advantages'>
 			<div className='advantages__pic_wrapper'>
 				<img className='advantages__pic' src={image} alt='Antares Market'/>
 			</div>
 			<p className='advantages__text'>
-				Наш сайт частных объявлений один из первых предоставляет возможность приобрести и продать необходимые товары и услуги за криптовалюту, изучить варианты и выбрать лучшее на рынке. Со временем мы будем добавлять новые функции и усовершенствовать предоставляемый механизм по максимуму.
+				<Tr lang={props.lang} string="Наш сайт частных объявлений один из первых предоставляет возможность приобрести и продать необходимые товары и услуги за криптовалюту, изучить варианты и выбрать лучшее на рынке. Со временем мы будем добавлять новые функции и усовершенствовать предоставляемый механизм по максимуму."/>
 			</p>
 			<p className='advantages__item'>
-				- Заказчикам мы предлагаем бесплатно размещать неограниченное число заказов, выбирать товары в каталоге и просматривать базу поставщиков.
+				<Tr lang={props.lang} string="- Заказчикам мы предлагаем бесплатно размещать неограниченное число заказов, выбирать товары в каталоге и просматривать базу поставщиков."/>
 			</p>
 			<p className='advantages__item'>
-				- А поставщикам использовать гибкую систему тарифов, чтобы реализовать свою продукцию максимально выгодно.
+				<Tr lang={props.lang} string="- А поставщикам использовать гибкую систему тарифов, чтобы реализовать свою продукцию максимально выгодно."/>
 			</p>
 			<p className='advantages__buyex'>
-				Если у вас нет криптовалюты, но хотите совершать выгодные сделки на нашем сайте, то вы можете приобрести её в один клик с помощью <a className='advantages__link' href='#'>партнёрского сервиса Buyex.</a>
+				<Tr lang={props.lang} string="Если у вас нет криптовалюты, но хотите совершать выгодные сделки на нашем сайте, то вы можете приобрести её в один клик с помощью "/>
+				<a className='advantages__link' href='#'>
+					<Tr lang={props.lang} string="партнёрского сервиса Buyex."/>
+				</a>
 			</p>
 			<h3 className='advantages__title'>
-				Воспользуйтесь всеми возможностями Antares Market прямо сейчас!
+				<Tr lang={props.lang} string="Воспользуйтесь всеми возможностями Antares Market прямо сейчас!"/>
 			</h3>
 			<div className='advantages__goods'>
 				<figure className='goods__item'>
@@ -33,7 +37,7 @@ export const Advantages = () => {
 						<img className='goods__pic icon' src={bitcoin} alt='Icon'/>
 					</div>
 					<figcaption className='goods__capture'>
-						Продажа и покупка <br/>товаров за криптовалюту
+						<Tr lang={props.lang} string="Продажа и покупка товаров за криптовалюту"/>
 					</figcaption>
 				</figure>
 				<figure className='goods__item'>
@@ -41,7 +45,7 @@ export const Advantages = () => {
 						<img className='goods__pic icon' src={verified} alt='Icon'/>
 					</div>
 					<figcaption className='goods__capture'>
-						Безопасная сделка с <br/>продавцом и покупателем
+						<Tr lang={props.lang} string="Безопасная сделка с продавцом и покупателем"/>
 					</figcaption>
 				</figure>
 				<figure className='goods__item'>
@@ -49,7 +53,7 @@ export const Advantages = () => {
 						<img className='goods__pic icon' src={star} alt='Icon'/>
 					</div>
 					<figcaption className='goods__capture'>
-						Возможность добавить <br/>товары в избранное
+						<Tr lang={props.lang} string="Возможность добавить товары в избранное"/>
 					</figcaption>
 				</figure>
 				<figure className='goods__item'>
@@ -57,7 +61,7 @@ export const Advantages = () => {
 						<img className='goods__pic icon' src={chat} alt='Icon'/>
 					</div>
 					<figcaption className='goods__capture'>
-						Связь с продавцами и <br/>покупателями по всему миру
+						<Tr lang={props.lang} string="Связь с продавцами и покупателями по всему миру"/>
 					</figcaption>
 				</figure>
 			</div>
