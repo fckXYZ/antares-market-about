@@ -73,11 +73,13 @@
     }
     .footer__docs-two {
         margin-top: 28px;
-        row-gap: 28px;
     }
     .footer__link {
         margin: 0 auto;
         text-align: center;
+    }
+    .footer__link.mt {
+        margin-top: 28px;
     }
     .footer__copyright {
         margin: 28px auto 0;

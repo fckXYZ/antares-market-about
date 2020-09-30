@@ -21,7 +21,7 @@ export const Footer = (props) => {
 					<a className='footer__link' href='#'>
 						<Tr lang={props.lang} string="Оферта о заключении договора оказания услуг"/>
 					</a>
-					<a className='footer__link' href='#'>
+					<a className='footer__link mt' href='#'>
 						<Tr lang={props.lang} string="Политика о данных пользователей ANTARES MARKET"/>
 					</a>
 				</div>

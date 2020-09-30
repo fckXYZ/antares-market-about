@@ -114,14 +114,15 @@
     .advantages__goods {
         margin-top: 71px;
         flex-wrap: wrap;
-        row-gap: 39px;
     }
     .advantages__goods .goods__item {
         width: 50%;
         align-items: flex-start;
         flex-direction: column;
     }
-
+    .advantages__goods .goods__item.mt {
+        margin-top: 39px;
+    }
     .advantages__goods .goods__capture {
         max-width: 200px;
     }
@@ -159,12 +160,15 @@
         width: calc(100% - 10px);
         flex-direction: column;
         flex-wrap: nowrap;
-        row-gap: 32px;
+        margin-top: 39px;
     }
+
     .advantages__goods .goods__item {
         width: 100%;
         align-items: center;
         flex-direction: column;
+        margin-top: 32px;
+
     }
     .advantages__goods .goods__capture {
         max-width: 200px;

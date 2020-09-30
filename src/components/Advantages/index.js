@@ -48,7 +48,7 @@ export const Advantages = (props) => {
 						<Tr lang={props.lang} string="Безопасная сделка с продавцом и покупателем"/>
 					</figcaption>
 				</figure>
-				<figure className='goods__item'>
+				<figure className='goods__item mt'>
 					<div className='icon-wrapper'>
 						<img className='goods__pic icon' src={star} alt='Icon'/>
 					</div>
@@ -56,7 +56,7 @@ export const Advantages = (props) => {
 						<Tr lang={props.lang} string="Возможность добавить товары в избранное"/>
 					</figcaption>
 				</figure>
-				<figure className='goods__item'>
+				<figure className='goods__item mt'>
 					<div className='icon-wrapper'>
 						<img className='goods__pic icon' src={chat} alt='Icon'/>
 					</div>

@@ -34,7 +34,7 @@ export const Info = (props) => {
 						<Tr lang={props.lang} string="Предоставляем отчеты и статистику просмотров и предложений"/>
 					</figcaption>
 				</figure>
-				<figure className='goods__item'>
+				<figure className='goods__item mt'>
 					<div className='icon-wrapper'>
 						<img className='goods__pic icon' src={fast} alt='Icon'/>
 					</div>
@@ -42,7 +42,7 @@ export const Info = (props) => {
 						<Tr lang={props.lang} string="Быстрое размещение объявлений и заказов в одном месте"/>
 					</figcaption>
 				</figure>
-				<figure className='goods__item'>
+				<figure className='goods__item mt'>
 					<div className='icon-wrapper'>
 						<img className='goods__pic icon' src={customer} alt='Icon'/>
 					</div>
