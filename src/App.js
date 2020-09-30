@@ -1,7 +1,6 @@
 import React, {useState}  from 'react';
 import './App.css';
 import Header from "./components/Header";
-import {Moto} from "./components/Moto";
 import {Info} from "./components/Info";
 import {Advantages} from "./components/Advantages";
 import {SafeDeal} from "./components/SafeDeal";
@@ -13,7 +12,6 @@ function App() {
     <div className="root">
         <Header lang={lang} onChange={(lang) => setLang(lang)}/>
         <div className='main'>
-            <Moto lang={lang}/>Tr
             <Info lang={lang}/>
             <Advantages lang={lang}/>
             <SafeDeal lang={lang}/>

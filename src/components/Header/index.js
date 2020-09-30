@@ -39,42 +39,53 @@ class Header extends React.Component {
 		const languages = this.state.list;
 		let width = window.innerWidth;
 		return (
-			<section className='header'>
-				<img className='header__logo' src={logo} alt='Antares Logo'/>
-				<div className='header__buttons'>
-					<div className='dropdown-wrapper' onClick={(e) => this.toggleDropdown(e)}>
-						<div className={`dropdown-title-wrapper ${this.state.is_opened ? 'is_opened' : null}`}>
-							<img className='langIcon' alt="Select Language" src={langIcon} />
-							<div className='header-dropdown'>
-								<p className='dropdown-title'>
-									{languages.find((lang) => lang.key === this.state.active_lang).value}
-								</p>
-								<img className='dropdown-icon' src={downArrow}/>
+			<div className='header-wrapper'>
+				<section className='header'>
+					<img className='header__logo' src={logo} alt='Antares Logo'/>
+					<div className='header__buttons'>
+						<div className='dropdown-wrapper' onClick={(e) => this.toggleDropdown(e)}>
+							<div className={`dropdown-title-wrapper ${this.state.is_opened ? 'is_opened' : null}`}>
+								<img className='langIcon' alt="Select Language" src={langIcon} />
+								<div className='header-dropdown'>
+									<p className='dropdown-title'>
+										{languages.find((lang) => lang.key === this.state.active_lang).value}
+									</p>
+									<img className='dropdown-icon' src={downArrow}/>
+								</div>
 							</div>
+							<ul className={`dropdown-list ${this.state.is_opened ? 'is_opened' : null}`}>
+								{languages.map((lang) => {
+									return (
+										<li className={`dropdown-lang ${lang.key === this.state.active_lang ? 'active' : null}`} key={lang.key} onClick={(e) => this.setActiveLang(e)}>
+											<p>{lang.value}</p>
+											{lang.key === this.state.active_lang ? <img className='check' src={check}/> : null }
+										</li>
+									)
+								})}
+							</ul>
 						</div>
-						<ul className={`dropdown-list ${this.state.is_opened ? 'is_opened' : null}`}>
-							{languages.map((lang) => {
-								return (
-									<li className={`dropdown-lang ${lang.key === this.state.active_lang ? 'active' : null}`} key={lang.key} onClick={(e) => this.setActiveLang(e)}>
-										<p>{lang.value}</p>
-										{lang.key === this.state.active_lang ? <img className='check' src={check}/> : null }
-									</li>
-								)
-							})}
-						</ul>
-					</div>
 
-					<a className='header__signup' target='_blank' href='#'>
-						<Tr lang={this.state.active_lang} string="Регистрация"/>
-					</a>
-					<button className='header__login'>
-						<img className='login-icon' src={login}/>
-						<p className='login__text'>
-							<Tr lang={this.state.active_lang} string="Войти"/>
-						</p>
+						<a className='header__signup' target='_blank' href='#'>
+							<Tr lang={this.state.active_lang} string="Регистрация"/>
+						</a>
+						<button className='header__login'>
+							<img className='login-icon' src={login}/>
+							<p className='login__text'>
+								<Tr lang={this.state.active_lang} string="Войти"/>
+							</p>
+						</button>
+					</div>
+				</section>
+				<section className='moto'>
+					<h1 className='moto__title'>
+						<Tr lang={this.state.active_lang} string="Антарес маркет - команда которая заботится о вашем будущем"/>
+					</h1>
+					<button className='moto__button'>
+						<Tr lang={this.state.active_lang} string="Посмотреть объявления"/>
 					</button>
-				</div>
-			</section>
+				</section>
+
+			</div>
 		);
 
 	}
