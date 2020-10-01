@@ -80,11 +80,12 @@
 
 .advantages__goods .goods__item {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .advantages__goods .goods__capture {
     margin: 12px 0;
-    max-width: 220px;
+    max-width: 180px;
 
     font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
@@ -92,6 +93,10 @@
     font-size: 14px;
     line-height: 23px;
     color: #717171;
+}
+
+.advantages__goods .goods__capture.wide {
+    max-width: 220px;
 }
 
 @media (max-width: 1024px) {

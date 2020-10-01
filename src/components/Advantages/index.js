@@ -60,7 +60,7 @@ export const Advantages = (props) => {
 					<div className='icon-wrapper'>
 						<img className='goods__pic icon' src={chat} alt='Icon'/>
 					</div>
-					<figcaption className='goods__capture'>
+					<figcaption className='goods__capture wide'>
 						<Tr lang={props.lang} string="Связь с продавцами и покупателями по всему миру"/>
 					</figcaption>
 				</figure>
