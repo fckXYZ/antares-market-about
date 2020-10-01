@@ -6,6 +6,7 @@ import downArrow from '../../assets/images/down-arrow.svg';
 import check from '../../assets/images/check-icon.svg';
 import login from '../../assets/images/login.svg';
 import {Tr} from "../Tr";
+import {BASE_URL} from "../../constants/constants";
 
 class Header extends React.Component {
 	state = {
@@ -33,6 +34,11 @@ class Header extends React.Component {
 			active_lang: newLang,
 		})
 		this.props.onChange(newLang)
+	}
+
+	openMarket(endpoint) {
+		const url = `${BASE_URL}${endpoint ? endpoint : ''}`;
+		window.open(url);
 	}
 
 	render() {
@@ -64,10 +70,10 @@ class Header extends React.Component {
 							</ul>
 						</div>
 
-						<a className='header__signup' target='_blank' href='#'>
+						<a className='header__signup' href='https://antares.market/sign-up'>
 							<Tr lang={this.state.active_lang} string="Регистрация"/>
 						</a>
-						<button className='header__login'>
+						<button className='header__login' onClick={() => this.openMarket('login')}>
 							<img className='login-icon' src={login}/>
 							<p className='login__text'>
 								<Tr lang={this.state.active_lang} string="Войти"/>
@@ -81,7 +87,7 @@ class Header extends React.Component {
 						<br/>
 						<Tr lang={this.state.active_lang} string="команда которая заботится о вашем будущем"/>
 					</h1>
-					<button className='moto__button'>
+					<button className='moto__button' onClick={() => this.openMarket()}>
 						<Tr lang={this.state.active_lang} string="Посмотреть объявления"/>
 					</button>
 				</section>

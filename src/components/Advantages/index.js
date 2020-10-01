@@ -24,7 +24,7 @@ export const Advantages = (props) => {
 			</p>
 			<p className='advantages__buyex'>
 				<Tr lang={props.lang} string="Если у вас нет криптовалюты, но хотите совершать выгодные сделки на нашем сайте, то вы можете приобрести её в один клик с помощью "/>
-				<a className='advantages__link' href='#'>
+				<a className='advantages__link' target='_blank' href='https://buyex.exchange/'>
 					<Tr lang={props.lang} string="партнёрского сервиса Buyex."/>
 				</a>
 			</p>
