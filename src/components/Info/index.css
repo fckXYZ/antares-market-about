@@ -65,13 +65,20 @@
     .info {
         margin-top: 55px;
     }
+    .info__title {
+        text-align: center;
+    }
     .info__text {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
         font-size: 18px;
         line-height: 33px;
         max-width: 632px;
     }
     .info__goods {
         margin-top: 5px;
+        max-width: 632px;
         flex-direction: column;
         flex-wrap: nowrap;
     }
@@ -83,6 +90,19 @@
     .goods__capture {
         max-width: 520px;
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info__title {
+        text-align: left;
+    }
+    .info__text {
+        text-align: left;
+        margin-left: 0;
+    }
+    .info__goods {
+        max-width: 100%;
     }
 }
 @media (max-width: 640px) {

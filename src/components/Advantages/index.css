@@ -104,19 +104,27 @@
         margin-top: 46px;
     }
     .advantages__text {
-        margin-top: 49px;
+        margin: 49px auto 28px;
         width: 100%;
         max-width: 682px;
     }
     .advantages__item {
+        margin: 0 auto;
         width: 100%;
         max-width: 682px;
     }
     .advantages__buyex {
+        margin: 28px auto 0;
         width: 100%;
         max-width: 682px;
     }
+    .advantages__title {
+        margin: 32px auto 0;
+        max-width: 682px;
+    }
     .advantages__goods {
+        margin: 49px auto 0;
+        max-width: 682px;
         margin-top: 71px;
         flex-wrap: wrap;
     }
@@ -130,6 +138,25 @@
     }
     .advantages__goods .goods__capture {
         max-width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .advantages__text {
+        margin: 49px 0 28px;
+    }
+    .advantages__item {
+        margin: 0 0;
+    }
+    .advantages__buyex {
+        margin: 28px 0 0;
+    }
+    .advantages__title {
+        margin: 32px 0 0;
+        max-width: 100%;
+    }
+    .advantages__goods {
+        margin: 49px 0 0;
+        max-width: 100%;
     }
 }
 @media (max-width: 640px) {
