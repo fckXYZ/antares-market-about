@@ -8,7 +8,7 @@
 .info__title {
     margin: 0;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -20,7 +20,7 @@
     margin: 24px 0 0;
     max-width: 857px;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -53,7 +53,7 @@
     max-width: 403px;
     margin: 0 0 0 16px;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

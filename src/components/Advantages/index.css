@@ -19,7 +19,7 @@
     margin: 66px 0 28px;
     max-width: 952px;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -31,7 +31,7 @@
     max-width: 952px;
     margin: 0;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -43,7 +43,7 @@
     max-width: 952px;
     margin: 28px 0 0;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -55,13 +55,13 @@
     color: dodgerblue;
     text-decoration: underline;
 
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .advantages__title {
     margin: 32px 0 0;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -86,7 +86,7 @@
     margin: 12px 0;
     max-width: 220px;
 
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

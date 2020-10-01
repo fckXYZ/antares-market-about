@@ -27,7 +27,7 @@
 
 .footer__link {
     margin: 0 24px 0 0;
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -40,7 +40,7 @@
     align-self: flex-end;
     margin: 0;
 
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

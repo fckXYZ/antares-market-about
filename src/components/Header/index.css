@@ -29,7 +29,7 @@
     color: #fff;
     margin-left: 38px;
 
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -45,7 +45,7 @@
     background: none;
     margin-left: 22px;
 
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -94,7 +94,7 @@
 
 .dropdown-title {
     margin: 0;
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -134,7 +134,7 @@
     justify-content: space-between;
     align-items: center;
 
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -171,7 +171,7 @@
 .moto__title {
     max-width: 530px;
     margin: 0;
-    font-family: Helvetica;
+    font-family: 'Helvetica', Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -188,7 +188,7 @@
     border: none;
     min-width: 266px;
 
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
