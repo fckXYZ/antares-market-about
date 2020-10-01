@@ -41,6 +41,10 @@ code {
   }
 }
 
+button:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
   transition: all linear .3s;

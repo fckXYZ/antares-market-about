@@ -169,7 +169,7 @@
 }
 
 .moto__title {
-    max-width: 600px;
+    max-width: 530px;
     margin: 0;
     font-family: Helvetica;
     font-style: normal;
@@ -197,7 +197,14 @@
     transition: all linear .3s;
 }
 
+.moto__button:hover {
+    background-color: #0091ab;
+}
+
 @media (max-width: 1024px) {
+    br {
+        display: none;
+    }
     .header-wrapper {
         width: calc(100% - 60px);
     }

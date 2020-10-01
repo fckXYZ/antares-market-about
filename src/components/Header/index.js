@@ -37,7 +37,6 @@ class Header extends React.Component {
 
 	render() {
 		const languages = this.state.list;
-		let width = window.innerWidth;
 		return (
 			<div className='header-wrapper'>
 				<section className='header'>
@@ -78,7 +77,9 @@ class Header extends React.Component {
 				</section>
 				<section className='moto'>
 					<h1 className='moto__title'>
-						<Tr lang={this.state.active_lang} string="Антарес маркет - команда которая заботится о вашем будущем"/>
+						<Tr lang={this.state.active_lang} string="Антарес маркет - "/>
+						<br/>
+						<Tr lang={this.state.active_lang} string="команда которая заботится о вашем будущем"/>
 					</h1>
 					<button className='moto__button'>
 						<Tr lang={this.state.active_lang} string="Посмотреть объявления"/>
