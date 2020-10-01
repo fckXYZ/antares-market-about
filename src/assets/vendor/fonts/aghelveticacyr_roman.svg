@@ -5,10 +5,10 @@
   Created by font-carrier
   </metadata>
   <defs>
-  <font id="AGHelvetica" horiz-adv-x="4157" vert-adv-y="4157" >
+  <font id="AGHelveticaCyrRoman" horiz-adv-x="4157" vert-adv-y="4157" >
     <font-face
       
-      font-family="AG_Helvetica"
+      font-family="AGHelveticaCyr"
       
       font-weight="400"
       
