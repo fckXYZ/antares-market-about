@@ -1,6 +1,6 @@
 import React from "react";
 import './index.css';
-import image from '../../assets/images/market-pic.svg';
+import image from '../../assets/images/market-pic.png';
 import bitcoin from "../../assets/images/bitcoin-icon.svg";
 import verified from "../../assets/images/verified-icon.svg";
 import star from "../../assets/images/star-icon.svg";

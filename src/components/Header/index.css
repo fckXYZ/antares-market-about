@@ -1,20 +1,18 @@
 .header-wrapper {
     display: flex;
-    margin: 13px auto 0;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 10px;
     background: url("../../assets/images/main-bg.png") no-repeat center;
     background-size: cover;
-    max-width: 1406px;
-    width: calc(100% - 34px);
+    width: 100%;
     height: 559px;
 }
 
 .header {
-    width: calc(100% - 60px);
-    margin: 41px auto 0;
-    max-width: 1040px;
+    width: calc(100% - 80px);
+    max-width: 1360px;
+    margin: 34px auto 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -25,6 +23,9 @@
     margin-top: 3px;
 }
 
+.header__buttons {
+    margin-right: 10px;
+}
 .header__signup {
     color: #fff;
     margin-left: 38px;
@@ -205,18 +206,15 @@
     br {
         display: none;
     }
-    .header-wrapper {
-        width: calc(100% - 60px);
-    }
     .header {
         width: calc(100% - 60px);
-        margin-top: 28px;
+        margin-top: 40px;
     }
     .header__buttons {
         margin-right: 5px;
     }
     .moto {
-        width: calc(100% - 100px);
+        width: calc(100% - 60px);
         margin-bottom: 55px;
     }
     .moto__title {
@@ -227,17 +225,13 @@
 
 }
 @media (max-width: 640px) {
-    .header-wrapper {
-        width: calc(100% - 40px);
-        background-clip: border-box;
-    }
     .header {
-        width: calc(100% - 34px);
-        margin-top: 24px;
+        width: calc(100% - 36px);
+        margin-top: 42px;
         align-items: center;
     }
     .header__buttons {
-        margin-right: 0;
+        margin-right: 2px;
     }
     .header__logo {
         width: 91px;
