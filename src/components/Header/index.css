@@ -29,6 +29,7 @@
 }
 
 .logo-text {
+    cursor: pointer;
     margin-left: 10px;
     width: 65px;
     height: 20px;
