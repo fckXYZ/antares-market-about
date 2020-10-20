@@ -1,3 +1,4 @@
+@import url(./assets/vendor/fonts.css);
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,4 +27,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.root {
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+}
+
+.main {
+  width: calc(100% - 60px);
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    width: calc(100% - 60px);
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    width: calc(100% - 40px);
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all linear .3s;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+.icon-wrapper {
+  background: rgba(78, 232, 196, .2);
+  border-radius: 20px;
+  max-width: 52px;
+  max-height: 52px;
+}
+
+.icon {
+  height: 27px;
+  width: 27px;
+  margin: 12px 13px;
 }

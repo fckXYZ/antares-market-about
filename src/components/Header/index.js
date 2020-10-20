@@ -41,12 +41,19 @@ class Header extends React.Component {
 		window.open(url);
 	}
 
+	toAntares = () => {
+		window.open('https://antares.trade', '_blank');
+	};
+
 	render() {
 		const languages = this.state.list;
 		return (
 			<div className='header-wrapper'>
 				<section className='header'>
-					<img className='header__logo' src={logo} alt='Antares Logo'/>
+					<div className="logo-wrapper">
+						<img className='header__logo' src={logo} alt='Antares Logo'/>
+						<div className='logo-text' onClick={() => this.toAntares()} />
+					</div>
 					<div className='header__buttons'>
 						<div className='dropdown-wrapper' onClick={(e) => this.toggleDropdown(e)}>
 							<div className={`dropdown-title-wrapper ${this.state.is_opened ? 'is_opened' : null}`}>
@@ -70,7 +77,7 @@ class Header extends React.Component {
 							</ul>
 						</div>
 
-						<a className='header__signup' href='https://antares.market/sign-up'>
+						<a className='header__signup' href='https://antares.market/sign-up' target='_blank'>
 							<Tr lang={this.state.active_lang} string="Регистрация"/>
 						</a>
 						<button className='header__login' onClick={() => this.openMarket('login')}>

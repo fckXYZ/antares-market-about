@@ -36,6 +36,33 @@
     color: #717171;
 }
 
+.copy-icons-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon-link {
+    margin-right: 8px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.telegram {
+    background-image: url(../../assets/images/telegram-icon.svg);
+}
+
+.facebook {
+    background-image: url(../../assets/images/facebook-icon.svg);
+}
+
 .footer__copyright {
     align-self: flex-end;
     margin: 0;
@@ -61,6 +88,10 @@
     .footer__link:last-of-type {
         margin: 0;
     }
+    .copy-icons-wrap {
+        flex-direction: row;
+        align-items: flex-end;
+    }
 }
 @media (max-width: 640px) {
     .footer {
@@ -83,5 +114,15 @@
     }
     .footer__copyright {
         margin: 28px auto 0;
+    }
+    .copy-icons-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons {
+        margin-top: 15px;
+    }
+    .icon-link {
+        margin-right: 3px;
     }
 }

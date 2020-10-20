@@ -4,6 +4,12 @@ import {Tr} from "../Tr";
 import {BASE_URL} from "../../constants/constants";
 
 export const Footer = (props) => {
+	const toTelegram = () => {
+		window.open('https://t.me/antaresmarket', '_blank');
+	}
+	const toFacebook = () => {
+		window.open('https://www.facebook.com/groups/853007495232705/', '_blank');
+	}
 	return (
 		<section className='footer'>
 			<div className='footer__links'>
@@ -27,9 +33,15 @@ export const Footer = (props) => {
 					</a>
 				</div>
 			</div>
-			<p className='footer__copyright'>
-				&copy; 2020 Antares Market
-			</p>
+			<div className='copy-icons-wrap'>
+				<p className='footer__copyright'>
+					&copy; 2020 Antares Market
+				</p>
+				<div className="icons">
+					<div className="icon-link telegram" onClick={() => toTelegram()} />
+					<div className="icon-link facebook" onClick={() => toFacebook()} />
+				</div>
+			</div>
 		</section>
 	)
 }

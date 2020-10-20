@@ -19,13 +19,28 @@
     justify-content: space-between;
 }
 
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .header__logo {
     margin-top: 3px;
+}
+
+.logo-text {
+    margin-left: 10px;
+    width: 65px;
+    height: 20px;
+    background-image: url("../../assets/images/logoText.svg");
+    background-position: center;
+    background-size: contain;
 }
 
 .header__buttons {
     margin-right: 10px;
 }
+
 .header__signup {
     color: #fff;
     margin-left: 38px;
@@ -239,6 +254,12 @@
         margin-top: 0;
         margin-left: 3px;
     }
+    .logo-text {
+        cursor: pointer !important;
+        width: 48px;
+        height: 15px;
+        margin-left: 8px;
+    }
     .header__signup {
         display: none;
     }
@@ -286,3 +307,12 @@
         padding: 21px 15px;
         min-width: 220px;
     }}
+
+@media (max-width: 400px) {
+    .dropdown-title {
+        display: none;
+    }
+    .dropdown-list {
+        right: 50px;
+    }
+}
